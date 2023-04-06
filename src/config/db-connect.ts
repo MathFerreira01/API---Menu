@@ -1,9 +1,14 @@
 import mongoose from 'mongoose';
 
-mongoose.connect(
-   'mongodb+srv://matheus:matheus12345@cluster0.0ujlzjd.mongodb.net/api-menu'
-);
+const DATABASE_URL = 'mongodb+srv://matheus:matheus12345@cluster0.0ujlzjd.mongodb.net/api-menu'
 
-let db = mongoose.connection;
+const connectDB = async () => {
+   try {
+      await mongoose.connect(DATABASE_URL);
+      console.log('Database connection successful');
+   } catch (error) {
+      console.log('Database connection error');
+   }
+};
 
-export default db;
+export default connectDB;
