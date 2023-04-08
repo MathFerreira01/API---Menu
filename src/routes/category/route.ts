@@ -5,7 +5,7 @@ import allCategoriesController from '../../controllers/category/all-category-con
 const routeCategory = Router();
 
 routeCategory
-   .post('/categories', createCategoryController)
-   .get('/categories', allCategoriesController);
+   .post('/category', createCategoryController)
+   .get('/category', allCategoriesController);
 
 export { routeCategory };
