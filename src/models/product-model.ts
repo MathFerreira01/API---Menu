@@ -10,6 +10,6 @@ const productSchema = new Schema({
    price: { type: Number },
 });
 
-const product = model('Product', productSchema);
+const products = model('Product', productSchema);
 
-export default product;
+export default products;
