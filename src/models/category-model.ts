@@ -1,17 +1,12 @@
 import { Schema, model } from 'mongoose';
+import ICategory from '../interface/ICategories';
 
-export interface IPropsCategory {
-   id: string;
-   parent: category | null;
-   name: string;
-}
-
-const categoriesSchema = new Schema<IPropsCategory>({
+const categoriesSchema = new Schema({
    id: { type: String },
-   parent: { type: category | null },
+   parent: { type: String || null },
    name: { type: String },
 });
 
-const categories = model<IPropsCategory>('category', categoriesSchema);
+const categories = model<ICategory>('Category', categoriesSchema);
 
 export default categories;
