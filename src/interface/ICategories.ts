@@ -1,6 +1,6 @@
 export interface ICategory {
-   id: string;
-   parent: null;
+   id?: string;
+   parent: string | null;
    name: string;
 }
 
