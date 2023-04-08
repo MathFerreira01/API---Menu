@@ -1,3 +1,4 @@
+import { Request } from 'express';
 import ICategory from '../../interface/ICategories';
 import createCategoryRepository from '../../repositories/category/create-category-repository';
 
