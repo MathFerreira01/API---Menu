@@ -1,5 +1,5 @@
-import express from 'express';
-import { Request, Response } from 'express';
+import express, { Request, Response } from 'express';
+import cors from 'cors';
 import connectDB from './config/db-connect';
 import { routeCategory } from './routes/category/route';
 import { routeProduct } from './routes/product/route';
@@ -13,6 +13,6 @@ app.route('/').get((req: Request, res: Response) => {
    res.status(200).send({ title: 'API Menu' });
 });
 
-app.use(express.json(), routeCategory, routeProduct);
+app.use(express.json(), cors(), routeCategory, routeProduct);
 
 app.listen(PORT, () => console.log('Server is running on PORT 3000'));
