@@ -11,7 +11,7 @@ const FindByIdProductService = async (id: string) => {
    } catch (error) {
       return {
          statusCode: 400,
-         body: 'Error fetching product data, please try again.',
+         body: 'Error fetching product data, please try again later.',
       };
    }
 };

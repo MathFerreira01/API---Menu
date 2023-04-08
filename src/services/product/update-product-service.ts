@@ -9,7 +9,7 @@ const updateProductService = async (id: string, params: IProduct) => {
          body: 'Product successfully updated!',
       };
    } catch (error) {
-      return { statusCode: 400, body: 'Error updating Product' };
+      return { statusCode: 400, body: 'Error updating Product, try again later.' };
    }
 };
 
