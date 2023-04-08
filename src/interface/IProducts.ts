@@ -1,7 +1,7 @@
 import ICategory from './ICategories';
 
 interface IProduct {
-   id?: string;
+   id: string;
    categories: string;
    name: string;
    qty: number;
