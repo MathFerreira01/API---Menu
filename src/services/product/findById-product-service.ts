@@ -3,10 +3,10 @@ import FindByIdProductRepository from '../../repositories/product/findById-produ
 
 const FindByIdProductService = async (req: Request) => {
    try {
-      const categoryData = await FindByIdProductRepository(req);
+      const productData = await FindByIdProductRepository(req);
       return {
          statusCode: 200,
-         body: categoryData,
+         body: productData,
       };
    } catch (error) {
       return {

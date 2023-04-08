@@ -1,7 +1,9 @@
 import categories from '../../models/category-model';
 
 const allCategoriesRepository = async () => {
-   await categories.find({});
+   const dataCategories = await categories.find();
+
+   return dataCategories;
 };
 
 export default allCategoriesRepository;
