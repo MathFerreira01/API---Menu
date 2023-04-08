@@ -1,15 +1,14 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model, Types } from 'mongoose';
 import IProduct from '../interface/IProducts';
-import ICategory from '../interface/ICategories';
+import categories from './category-model';
 
-const productSchema = new Schema({
-   id: { type: String },
-   categories: { type: Schema.Types.ObjectId, ref: 'Category', required: true },
+const productSchema = new Schema<IProduct>({
+   categories: { type: [] },
    name: { type: String },
    qty: { type: Number },
    price: { type: Number },
 });
 
-const products = model('Product', productSchema);
+const products = model<IProduct>('Product', productSchema);
 
 export default products;

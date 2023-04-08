@@ -1,8 +1,9 @@
-import ICategory from './ICategories';
+import { Document, Types } from 'mongoose';
+import { ICategory } from './ICategories';
 
-interface IProduct {
-   id: string;
-   categories: string;
+interface IProduct extends Document {
+   id: Types.ObjectId;
+   categories: ICategory[];
    name: string;
    qty: number;
    price: number;

@@ -1,7 +1,10 @@
-export interface ICategory {
-   id?: string;
-   parent: string | null;
+import { Types, Document } from 'mongoose';
+
+export interface ICategory extends Document {
+   id: Types.ObjectId;
    name: string;
 }
 
-export default ICategory;
+export interface IPopulateParent {
+   parent: ICategory | null;
+}

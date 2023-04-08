@@ -1,4 +1,4 @@
-import ICategory from '../../interface/ICategories';
+import { ICategory } from '../../interface/ICategories';
 import categories from '../../models/category-model';
 
 const createCategoryRepository = async (params: ICategory) => {
