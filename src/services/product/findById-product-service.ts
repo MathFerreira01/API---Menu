@@ -1,9 +1,9 @@
 import { Request } from 'express';
 import FindByIdProductRepository from '../../repositories/product/findById-product-repository';
 
-const FindByIdProductService = async (req: Request) => {
+const FindByIdProductService = async (id: string) => {
    try {
-      const productData = await FindByIdProductRepository(req);
+      const productData = await FindByIdProductRepository(id);
       return {
          statusCode: 200,
          body: productData,
