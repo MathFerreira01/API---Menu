@@ -1,19 +1,8 @@
-import { Response } from 'express';
 import IUser from '../../interface/IUser';
-import user from '../../models/user-model';
 import createAuthRepository from '../../repositories/auth/create-auth-repository';
 
 const createAuthService = async (data: IUser) => {
    try {
-      //   const existingUser = await user.findOne({ email: data.email });
-
-      //   if (existingUser) {
-      //      return {
-      //         status: 409,
-      //         body: 'This email is already registered.',
-      //      };
-      //   }
-
       await createAuthRepository(data);
       return {
          statusCode: 201,

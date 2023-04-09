@@ -1,4 +1,3 @@
-import { Request } from 'express';
 import FindByIdProductRepository from '../../repositories/product/find-product-repository';
 
 const FindByIdProductService = async (id: string) => {
