@@ -15,7 +15,6 @@ Para o desenvolvimento desta aplicação backend, foram utilizadas as seguintes 
 -  [Mongoose](https://mongoosejs.com/)
 -  [Jsonwebtoken](https://jwt.io/)
 
-<br/>
 <h2>Instalando / Começando</h2>
 
 Para executar o projeto, será necessário ter instalado em sua maquina os seguintes programas:
