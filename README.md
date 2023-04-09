@@ -32,11 +32,7 @@ Clone o repositório do git com o seguinte comando:
 <h3> Iniciando o Backend </h3>
 <br/>
 
-Após clonar a aplicação, será necessário abrir o terminal da sua maquina, e digitar os seguintes comandos.
-
-    //Para entrar na pasta backend:
-
-    cd api-menu
+Após clonar a aplicação, será necessário abrir a pasta da aplicação com o editor de código que você utiliza, e rodar os seguintes comandos:
 
     //Para baixar as dependências da aplicação backend:
 
