@@ -16,4 +16,4 @@ app.route('/').get((req: Request, res: Response) => {
 
 app.use(express.json(), cors(), routeAuth, routeCategory, routeProduct);
 
-app.listen(PORT, () => console.log('Server is running on PORT 3000'));
+app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
