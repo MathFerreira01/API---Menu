@@ -2,7 +2,7 @@ import { Router } from 'express';
 import allProductsController from '../../controllers/product/all-products-controller';
 import createProductController from '../../controllers/product/create-product-controller';
 import deleteProductController from '../../controllers/product/delete-product-controller';
-import FindByIdProductController from '../../controllers/product/findById-product-controller';
+import FindByIdProductController from '../../controllers/product/find-product-controller';
 import updateProductController from '../../controllers/product/update-product-controller';
 
 const routeProduct = Router();
