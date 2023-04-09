@@ -11,7 +11,7 @@ const createAuthRepository = async (data: IUser) => {
 
    const token = jwt.sign(
       { userId: dataUser._id },
-      '' + process.env.JWT_SECRET
+      `${process.env.JWT_SECRET}`
    );
 
    return token;
