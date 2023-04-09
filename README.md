@@ -30,7 +30,6 @@ Clone o repositório do git com o seguinte comando:
     git clone https://github.com/MathFerreira01/API-Menu.git
 
 <h3> Iniciando o Backend </h3>
-<br/>
 
 Após clonar a aplicação, será necessário abrir a pasta da aplicação com o editor de código que você utiliza, e rodar os seguintes comandos:
 
