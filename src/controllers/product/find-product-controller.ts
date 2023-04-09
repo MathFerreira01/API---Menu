@@ -3,9 +3,7 @@ import FindByIdProductService from '../../services/product/find-product-service'
 
 const FindByIdProductController = async (req: Request, res: Response) => {
    const response = await FindByIdProductService(req.params.id);
-   if (response.statusCode === 200) {
-      return res.status(response.statusCode).json(response.body);
-   }
+   
    return res.status(response.statusCode).json(response.body);
 };
 
