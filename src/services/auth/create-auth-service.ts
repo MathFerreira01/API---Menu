@@ -1,4 +1,4 @@
-import IUser from '../../interface/IUser';
+import IUser from '../../interfaces/IUser';
 import createAuthRepository from '../../repositories/auth/create-auth-repository';
 
 const createAuthService = async (data: IUser) => {

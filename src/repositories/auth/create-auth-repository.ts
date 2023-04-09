@@ -1,7 +1,7 @@
 import user from '../../models/user-model';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import IUser from '../../interface/IUser';
+import IUser from '../../interfaces/IUser';
 
 const createAuthRepository = async (data: IUser) => {
    const hashedPassword = await bcrypt.hash(data.password, 10);

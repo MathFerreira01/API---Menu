@@ -1,4 +1,4 @@
-import IProduct from '../../interface/IProducts';
+import IProduct from '../../interfaces/IProducts';
 import products from '../../models/product-model';
 
 const updateProductRepository = (id: string, params: IProduct) => {

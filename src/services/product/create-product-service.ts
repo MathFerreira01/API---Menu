@@ -1,4 +1,4 @@
-import IProduct from '../../interface/IProducts';
+import IProduct from '../../interfaces/IProducts';
 import createProductRepository from '../../repositories/product/create-product-repositoy';
 
 const createProductService = async (params: IProduct) => {
